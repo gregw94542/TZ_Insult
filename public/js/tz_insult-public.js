@@ -45,11 +45,12 @@ var tz_insult_Loop = {
 	jQuery('#tz_go').click(function() {
 
 		var input = jQuery('#tz_name').val();
+		input = encodeURIComponent(input);
 		var $url = testvar + "tz_insult1.php?name=" + input;
 		var $cb = get_cachebreaker();
 
 		$url = $url +  $cb;
-		alert($url);
+//		alert($url);
 		jQuery("#TZ_INSULT").load($url);
 	})
 
