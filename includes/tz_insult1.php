@@ -2,8 +2,13 @@
 
 function tz_insult($victim)
 {
-
-    $tenz_array = array(
+//================================================================== 
+// this array contains the list of insults
+//  the XX will be replaced by the victim's name
+//  make sure the insult in in between quotes   "<insult goes here>"
+//  separate each insult with a comma  
+//==================================================================   
+ $tenz_array = array(
     "XX did your mother dress you?",
     "XX you are ugly",
     "XX is stupid",
@@ -18,13 +23,12 @@ function tz_insult($victim)
     "XX is a bright as a burnt out lightbulb",
     );
 
-    $len = count($tenz_array);
-    $index = rand(0,$len-1);
+    $len = count($tenz_array);	// calculate the length on the list (array)
+    $index = rand(0,$len-1);    // use the random number to pick out which item to pull out
 
-    $insult = $tenz_array[$index] ;
-//    error_log("victim: $victim");
-    $insult = str_replace("XX", "$victim", $insult);
-    echo "<h1>$insult<h1>";
+    $insult = $tenz_array[$index] ;  // pick  the insult out of  the list of insults
+    $insult = str_replace("XX", "$victim", $insult);   	// replace the "XX" with the victim's name
+    echo "<h1>$insult<h1>";								// display the insult to the screen
 }
 
 
