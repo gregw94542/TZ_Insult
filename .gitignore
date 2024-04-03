@@ -1,0 +1,6 @@
+*.swp
+TZ_Insult.komodoproject
+admin/.DS_Store
+admin/._.DS_Store
+public/.DS_Store
+public/._.DS_Store

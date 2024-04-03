@@ -218,8 +218,8 @@ class tz_insult {
 
 
 <div class="tz_div">
-Who wants to be insulted?  <input type="textedit" id="tz_name" class="tz_name">
- <input type="button" id="tz_go" value="Insult Me">
+INSERT NAME HERE:  <input type="textedit" id="tz_name" class="tz_name">
+ <input type="button" id="tz_go" value="'Sup?">
  <?php
  $uri = plugin_dir_url(__FILE__);
   echo "<script> var testvar=\"" . $uri . "\"</script>";
